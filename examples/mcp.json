@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mail": {
+      "url": "https://mail-mcp.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer REPLACE_WITH_MCP_AUTH_TOKEN"
+      }
+    }
+  }
+}

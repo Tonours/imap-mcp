@@ -1,0 +1,32 @@
+{
+  "name": "imap-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server for reading, sending, drafting, and moving messages through standard IMAP and SMTP.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node --env-file-if-missing=.env dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test dist-test/test/*.test.js",
+    "test:integration": "tsc -p tsconfig.test.json && MCP_IT=1 node --env-file-if-missing=.env --test dist-test/test/*.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "imapflow": "^1.0.160",
+    "mailparser": "^3.7.0",
+    "nodemailer": "^10.0.10",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^22.10.0",
+    "@types/nodemailer": "^8.0.2",
+    "typescript": "^5.7.0"
+  }
+}

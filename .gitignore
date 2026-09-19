@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-test/
+.env
+*.log
+.DS_Store
+/PLAN.md
+/docs/plan/
+/.workflow/
+/.local/
