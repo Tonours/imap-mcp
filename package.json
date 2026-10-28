@@ -17,7 +17,7 @@
     "test:integration": "tsc -p tsconfig.test.json && MCP_IT=1 node --env-file-if-missing=.env --test dist-test/test/*.test.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.30.0",
+    "@modelcontextprotocol/sdk": "1.32.2",
     "imapflow": "^1.0.160",
     "mailparser": "^3.7.0",
     "nodemailer": "^10.0.10",
